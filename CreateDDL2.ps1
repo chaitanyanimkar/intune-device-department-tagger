@@ -25,7 +25,7 @@ if (-not $WhatIf) {
         # Create the dynamic distribution list
         New-DynamicDistributionGroup -Name "All-Active-Staff" `
             -DisplayName "All Active Staff" `
-            -PrimarySmtpAddress "all-active-staff@structurecraft.com" `
+            -PrimarySmtpAddress "all-active-staff@<YOUR-COMPANY-DOMAIN>.com" ` # <---------- Change this to your domain 
             -RecipientFilter $previewFilter
 
         # Verify the group creation
