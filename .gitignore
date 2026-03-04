@@ -1,0 +1,13 @@
+# Exclude all log/audit exports — these contain real device and user data
+Logs/
+CheckDepartment/*.csv
+
+# Exclude HR/directory data exports
+MainDatabaseRippling/
+
+# VS Code workspace settings (optional — remove this line to share debug config)
+.vscode/
+
+# Windows artifacts
+Thumbs.db
+desktop.ini
